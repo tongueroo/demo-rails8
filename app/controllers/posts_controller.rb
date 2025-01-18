@@ -4,11 +4,11 @@ class PostsController < ApplicationController
   # GET /posts or /posts.json
   def index
     @posts = Post.all
-    Post.foo
   end
 
   # GET /posts/1 or /posts/1.json
   def show
+    Post.raise_the_roof
   end
 
   # GET /posts/new

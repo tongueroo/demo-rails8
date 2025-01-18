@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  def self.foo
+  def self.raise_the_roof
     raise "the roof"
   end
 end
