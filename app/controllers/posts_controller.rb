@@ -8,7 +8,9 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
-    Post.raise_the_roof
+    if params[:raise]
+      Post.raise_the_roof
+    end
   end
 
   # GET /posts/new

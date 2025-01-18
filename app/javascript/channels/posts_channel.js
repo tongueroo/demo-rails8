@@ -10,6 +10,7 @@ consumer.subscriptions.create("PostsChannel", {
   },
 
   received(data) {
+    console.log("received", data)
     // Called when there's incoming data on the websocket for this channel
   }
 });
